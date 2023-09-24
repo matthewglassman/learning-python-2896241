@@ -47,6 +47,7 @@ print("string type" + str(123))
 
 # Global vs. local variables in functions
 def someFunction():
+    global mystr #Will replace the global at the time with what is defined in function
     mystr = "def" #local variable
     print(mystr)
 
