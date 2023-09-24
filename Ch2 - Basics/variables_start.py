@@ -7,7 +7,7 @@
 # Basic data types in Python: Numbers, Strings, Booleans, Sequences, Dictionaries
 myint = 5
 myfloat = 13.2
-mystr = "This is a string"
+mystr = "This is a string" #global variable
 mybool = True
 mylist = [0, 1, "two", 3.2, False]
 mytuple = (0, 1, 2)
@@ -35,8 +35,20 @@ print(mylist[1:5:2])
 print(mylist[::-1])
 
 # dictionaries are accessed via keys
+print(mydict["one"])
 
 # ERROR: variables of different types cannot be combined
 
-# Global vs. local variables in functions
+#This will cause an error
+#print("string type" + 123)
 
+#This will not
+print("string type" + str(123))
+
+# Global vs. local variables in functions
+def someFunction():
+    mystr = "def" #local variable
+    print(mystr)
+
+someFunction() #prints local variable in function someFunction
+print(mystr) #prints the global variable at the time
