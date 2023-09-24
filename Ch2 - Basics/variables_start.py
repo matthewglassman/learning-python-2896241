@@ -53,3 +53,6 @@ def someFunction():
 
 someFunction() #prints local variable in function someFunction
 print(mystr) #prints the global variable at the time
+
+del mystr
+print(mystr)
