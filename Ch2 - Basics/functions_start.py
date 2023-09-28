@@ -42,3 +42,4 @@ def power(num, x=1): #x=1 is a default value in case 2nd argument isn't given.
 
 print(power(2)) #will take the default x=1
 print(power(2,3)) #will use 3 for x
+print(power(x=3, num=2)) #python knows what to do since the parameters are named in the function call.
