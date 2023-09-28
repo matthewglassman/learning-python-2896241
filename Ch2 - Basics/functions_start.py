@@ -28,7 +28,11 @@ def power(num, x=1): #x=1 is a default value in case 2nd argument isn't given.
     return result
 
 # TODO: function with variable number of parameters
-
+def multi_add(*args):  # the * means I can pass in a variable number of arguments and named arguments/parameters come first.
+    result = 0
+    for x in args:
+        result = result + x
+    return result
 
 #Function execution examples (wrong and right)
 # func1() #prints I am a function from direct function call
@@ -40,6 +44,8 @@ def power(num, x=1): #x=1 is a default value in case 2nd argument isn't given.
 
 # print(cube(3))
 
-print(power(2)) #will take the default x=1
-print(power(2,3)) #will use 3 for x
-print(power(x=3, num=2)) #python knows what to do since the parameters are named in the function call.
+# print(power(2)) #will take the default x=1
+# print(power(2,3)) #will use 3 for x
+# print(power(x=3, num=2)) #python knows what to do since the parameters are named in the function call.
+
+print(multi_add(4,5,10,4))
