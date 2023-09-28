@@ -23,6 +23,6 @@ def func1():
 
 
 #Function execution examples (wrong and right)
-func1()
-print(func1())
-print(func1)
+func1() #prints I am a function
+print(func1()) #prints I am a function
+print(func1) #Returns none
