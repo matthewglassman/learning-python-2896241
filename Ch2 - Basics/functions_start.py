@@ -20,7 +20,12 @@ def cube(x):
 
 
 # TODO: function with default value for an parameter
-
+def power(num, x=1): #x=1 is a default value in case 2nd argument isn't given.
+    result = 1;
+    #Takes a number and raises it to a power and the loop will run whatever number x is in the 2nd argument
+    for i in range(x):
+        result - result * num
+    return result
 
 # TODO: function with variable number of parameters
 
