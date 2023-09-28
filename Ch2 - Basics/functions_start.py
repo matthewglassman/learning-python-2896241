@@ -11,7 +11,7 @@ def func1():
 
 
 # TODO: function that takes parameters
-def func2 (arg2, arg2): 
+def func2 (arg1, arg2): 
     print(arg1, " ", arg2)
 
 # TODO: function that returns a value
@@ -29,3 +29,8 @@ def cube(x):
 func1() #prints I am a function from direct function call
 print(func1()) #prints I am a function  and also prints out the return value of NONE 
 print(func1) #Function definition is being printed where the object resides in memory
+
+func2(10, 20)
+print(func2(10, 20))
+
+print(cube(3))
