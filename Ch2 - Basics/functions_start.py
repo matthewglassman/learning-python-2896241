@@ -10,16 +10,19 @@ def func1():
     print("I am a function") # this is the body of the function.
 
 
-# TODO: function that takes arguments
-
+# TODO: function that takes parameters
+def func2 (arg2, arg2): 
+    print(arg1, " ", arg2)
 
 # TODO: function that returns a value
+def cube(x):
+    return x * x  * x #will multiply x times itself 3 times and then return that value to function call.
 
 
-# TODO: function with default value for an argument
+# TODO: function with default value for an parameter
 
 
-# TODO: function with variable number of arguments
+# TODO: function with variable number of parameters
 
 
 #Function execution examples (wrong and right)
