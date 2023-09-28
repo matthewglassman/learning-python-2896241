@@ -24,18 +24,21 @@ def power(num, x=1): #x=1 is a default value in case 2nd argument isn't given.
     result = 1;
     #Takes a number and raises it to a power and the loop will run whatever number x is in the 2nd argument
     for i in range(x):
-        result - result * num
+        result = result * num
     return result
 
 # TODO: function with variable number of parameters
 
 
 #Function execution examples (wrong and right)
-func1() #prints I am a function from direct function call
-print(func1()) #prints I am a function  and also prints out the return value of NONE 
-print(func1) #Function definition is being printed where the object resides in memory
+# func1() #prints I am a function from direct function call
+# print(func1()) #prints I am a function  and also prints out the return value of NONE 
+# print(func1) #Function definition is being printed where the object resides in memory
 
-func2(10, 20)
-print(func2(10, 20))
+# func2(10, 20)
+# print(func2(10, 20))
 
-print(cube(3))
+# print(cube(3))
+
+print(power(2)) #will take the default x=1
+print(power(2,3)) #will use 3 for x
