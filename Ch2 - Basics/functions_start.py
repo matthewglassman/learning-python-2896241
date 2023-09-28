@@ -23,6 +23,6 @@ def func1():
 
 
 #Function execution examples (wrong and right)
-func1() #prints I am a function
-print(func1()) #prints I am a function
-print(func1) #Returns none
+func1() #prints I am a function from direct function call
+print(func1()) #prints I am a function  and also prints out the return value of NONE 
+print(func1) #Function definition is being printed where the object resides in memory
