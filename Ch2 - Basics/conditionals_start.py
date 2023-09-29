@@ -6,12 +6,15 @@
 
 
 def main():
-    x, y = 1000, 100   
+    x, y = 100, 100   
 
     # conditional flow uses if, elif, else
 
     if x < y:  #Compare x above is less than y  
         result = "x is less than y"
+    #What is they are the same?
+    elif x == y:
+        result = "x and y are the same"
     #Now lets put in an else statement to handle when X is greater than Y.
     else: 
         result = "x is greater than y"
