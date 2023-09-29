@@ -6,7 +6,7 @@
 
 
 def main():
-    x, y = 10, 100
+    x, y = 1000, 100   #Causes and error because X will no longer be less than Y and so variable 'result' never gets created and thus print can't print anything.
 
     # conditional flow uses if, elif, else
 
