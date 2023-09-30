@@ -30,3 +30,14 @@ class Motorcycle(Vehicle):
             self.wheels = 2
         self.doors = 0
         self.enginetype = enginetype
+
+#Now lets create/instantiate a couple of cars and a motorcyle
+#To do this we use the Class name along with the parameters of the init function/method
+
+car1 = Car("gas")
+car2 = Car("electric")
+mc1 = Motorcycle("gas", True)
+
+print(mc1.wheels)
+print(car1.enginetype)
+print(car2.doors)
