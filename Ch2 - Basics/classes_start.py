@@ -24,6 +24,10 @@ class Car(Vehicle):  #The item in the parantheses here is saying that Class Car 
         self.doors = 4
         self.enginetype = enginetype
 
+    def drive(self, speed):
+        super().drive(speed)
+        print("Driving my", self.enginetype, "car at", self.speed)
+
 #Now lets create a class of Motorcycle
 class Motorcycle(Vehicle):
     def __init__(self, enginetype, hassidecar):
@@ -34,6 +38,10 @@ class Motorcycle(Vehicle):
             self.wheels = 2
         self.doors = 0
         self.enginetype = enginetype
+
+    def drive(self, speed):
+        super().drive(speed)
+        print("Driving my", self.enginetype, "motorcyle at", self.speed)
 
 #Now lets create/instantiate a couple of cars and a motorcyle
 #To do this we use the Class name along with the parameters of the init function/method
@@ -48,3 +56,7 @@ print(car2.doors)
 
 #Classes don't just hold data can also define their own function
 #So we will go back and give each vehicle the ability to drive
+
+car1.drive(30)
+car2.drive(40)
+mc1.drive(50)
