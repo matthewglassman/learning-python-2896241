@@ -19,4 +19,14 @@ class Car(Vehicle):  #The item in the parantheses here is saying that Class Car 
         self.wheels = 4
         self.doors = 4
         self.enginetype = enginetype
-    
+
+#Now lets create a class of Motorcycle
+class Motorcycle(Vehicle):
+    def __init__(self, enginetype, hassidecar):
+        super().__init__("Motorcycle")
+        if (hassidecar):
+            self.wheels = 3
+        else:
+            self.wheels = 2
+        self.doors = 0
+        self.enginetype = enginetype
