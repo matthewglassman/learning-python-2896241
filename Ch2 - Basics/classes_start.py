@@ -10,6 +10,10 @@ class Vehicle():
     def __init__(self,bodystyle): #function/method is what Python calls when the object has been created and it is time to initialize the object's data
         self.bodystyle = bodystyle #define a property on the class that will take what is equal to the bodystyle parameter that gets passed in.
 
+    def drive(self, speed):
+        self.mode = "driving"
+        self.speed = speed
+
 #Now we can create other classes from the base class of Vehicle
 
 class Car(Vehicle):  #The item in the parantheses here is saying that Class Car inherits from Class Vehicle
@@ -41,3 +45,6 @@ mc1 = Motorcycle("gas", True)
 print(mc1.wheels)
 print(car1.enginetype)
 print(car2.doors)
+
+#Classes don't just hold data can also define their own function
+#So we will go back and give each vehicle the ability to drive
