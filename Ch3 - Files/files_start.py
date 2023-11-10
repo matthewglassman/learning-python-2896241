@@ -12,7 +12,7 @@ def main():
 
 
     # write some lines of data to the file
-    for in in range(10):
+    for i in range(10):
         myfile.write("This is some text\n")
     
     # close the file when done
