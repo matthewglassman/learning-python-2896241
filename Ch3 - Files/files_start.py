@@ -25,6 +25,6 @@ def main():
     if myfile.mode == 'r':
         contents = myfile.read()
         print(contents)
-    
+    #Could use readlines() method to read each lines as a separate item in an array as well.
 if __name__ == "__main__":
     main()
