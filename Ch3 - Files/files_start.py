@@ -5,16 +5,18 @@
 
 
 def main():  
-    # Open a file for writing and create it if it doesn't exist
-
+    # Open a file named textfile.txt for writing and create it if it doesn't exist using w+
+    myfile = open("textfile.txt", "w+")
     
     # Open the file for appending text to the end
 
 
     # write some lines of data to the file
-
+    for in in range(10):
+        myfile.write("This is some text\n")
     
     # close the file when done
+    myfile.close()
 
     
     # Open the file back up and read the contents
