@@ -5,6 +5,9 @@
 
 import os
 from os import path
+#To use shell functionality need to import the following:
+import shutil
+
 
 def main():
     # make a duplicate of an existing file
