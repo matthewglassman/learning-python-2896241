@@ -7,6 +7,7 @@ import os
 from os import path
 #To use shell functionality need to import the following:
 import shutil
+from shutil import make_archive
 
 
 def main():
@@ -27,6 +28,7 @@ def main():
 
 
         # now put things into a ZIP archive
+        #This will use the shutil make_archive class which needs to be imported.
 
         # more fine-grained control over ZIP files
 
