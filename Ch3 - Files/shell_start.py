@@ -12,9 +12,9 @@ from shutil import make_archive
 
 def main():
     # make a duplicate of an existing file
-    if path.exists("textfile.txt"):  #to make sure the file exists
+    if path.exists("newfile.txt"):  #to make sure the file exists
         # get the path to the file in the current directory
-        src = path.realpath("textfile.txt")
+        src = path.realpath("newfile.txt")
         # let's make a backup copy by appending "bak" to the name
         #first lets create the destination of the path and file by concatenating the path and the file that we want to copy
         # destination = src + ".bak"
@@ -24,7 +24,7 @@ def main():
 
         # rename the original file
         #The rename function is in the OS module and take two parameters/arguments
-        os.rename("textfile.txt", "newfile.txt")
+        # os.rename("textfile.txt", "newfile.txt")
 
 
         # now put things into a ZIP archive
