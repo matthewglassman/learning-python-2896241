@@ -30,6 +30,10 @@ def main():
         # now put things into a ZIP archive
         #This will use the shutil make_archive class which needs to be imported.
 
+        #get full path to the directory to back up
+        root_dir, tail = path.split(src)
+        shutil.make_archive("archive", "zip", root_dir)
+
         # more fine-grained control over ZIP files
 
       
