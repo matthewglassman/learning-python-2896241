@@ -22,7 +22,10 @@ def main():
         shutil.copy(src,destination)
 
         # rename the original file
-        
+        #The rename function is in the OS module and take two parameters/arguments
+        os.rename("textfile.txt", "newfile.txt")
+
+
         # now put things into a ZIP archive
 
         # more fine-grained control over ZIP files
