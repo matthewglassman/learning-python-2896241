@@ -8,7 +8,7 @@ from os import path
 #To use shell functionality need to import the following:
 import shutil
 from shutil import make_archive
-
+from zipfile import ZipFile
 
 def main():
     # make a duplicate of an existing file
@@ -31,8 +31,8 @@ def main():
         #This will use the shutil make_archive class which needs to be imported.
 
         #get full path to the directory to back up
-        root_dir, tail = path.split(src)
-        shutil.make_archive("archive", "zip", root_dir)
+        # root_dir, tail = path.split(src)
+        # shutil.make_archive("archive", "zip", root_dir)
 
         # more fine-grained control over ZIP files
 
