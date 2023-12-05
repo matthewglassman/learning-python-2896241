@@ -16,10 +16,10 @@ def main():
         src = path.realpath("textfile.txt")
         # let's make a backup copy by appending "bak" to the name
         #first lets create the destination of the path and file by concatenating the path and the file that we want to copy
-        destination = src + ".bak"
+        # destination = src + ".bak"
 
-        #Next we will use the copy function of the shutil module to copy the source to the destination
-        shutil.copy(src,destination)
+        # #Next we will use the copy function of the shutil module to copy the source to the destination
+        # shutil.copy(src,destination)
 
         # rename the original file
         #The rename function is in the OS module and take two parameters/arguments
