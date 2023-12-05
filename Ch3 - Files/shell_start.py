@@ -35,6 +35,11 @@ def main():
         # shutil.make_archive("archive", "zip", root_dir)
 
         # more fine-grained control over ZIP files
+        #Create custom zipfile using the 'with' keyword to create a local scope
+
+        with ZipFile("testzip.zip", "w") as newzip:
+            newzip.write("newfile.txt")
+            newzip.write("textfile.txt.bak")
 
       
 if __name__ == "__main__":
